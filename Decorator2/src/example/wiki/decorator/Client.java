@@ -10,5 +10,15 @@ public class Client
 		
 		textComponent.draw();
 		System.out.println("Description: " + textComponent.getDescription());
+		
+		System.out.println();
+		
+		TextComponent textComponent2 = new TextArea();
+		textComponent2 = new UnicodeTextComponent(textComponent2);
+		textComponent2 = new RichTextComponent(textComponent2);
+		
+		textComponent2.draw();
+		System.out.println("Description: " + textComponent2.getDescription());
+		
 	}
 }

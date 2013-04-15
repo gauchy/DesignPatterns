@@ -5,5 +5,9 @@ Design pattern examples
 3 Decorator - coffee example
 4 Decorator2 - gui component example
 5 FactoryMethod - Car example
+6 AbstractFactory - Windows button example
+(Main diff between FactoryMethod and AbstractFactory is that AbstractFactory is completely interface driven.)
+
+
 
 

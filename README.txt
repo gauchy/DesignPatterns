@@ -7,7 +7,7 @@ Design pattern examples
 5 FactoryMethod - Car example
 6 AbstractFactory - Windows button example
 (Main diff between FactoryMethod and AbstractFactory is that AbstractFactory is completely interface driven.)
-7 Command - When similar kind of execution has to be done from a single place then use command pattern
+7 Command - When similar kind of execution has to be done from a single place then use command pattern...Universal Remote control example
 
 
 

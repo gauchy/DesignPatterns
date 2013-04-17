@@ -8,9 +8,8 @@ Design pattern examples
 6 AbstractFactory - Windows button example
 (Main diff between FactoryMethod and AbstractFactory is that AbstractFactory is completely interface driven.)
 7 Command - When similar kind of execution has to be done from a single place then use command pattern...Universal Remote control example
-8 Command2 - Todo : Example on network crashing
-9 Command3 - Todo : Example on Job scheduler
-10 Singleton - Threadsafe singleton needs double nullability check...."http://javarevisited.blogspot.in/2011/06/volatile-keyword-java-example-tutorial.html" explains the importance of volatile.
+8 Command2 - Todo : Example on network crashing...it is using other patterns like singleton and observer.
+9 Singleton - Threadsafe singleton needs double nullability check...."http://javarevisited.blogspot.in/2011/06/volatile-keyword-java-example-tutorial.html" explains the importance of volatile.
 
 
 

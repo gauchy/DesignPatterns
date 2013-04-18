@@ -10,6 +10,8 @@ Design pattern examples
 7 Command - When similar kind of execution has to be done from a single place then use command pattern...Universal Remote control example
 8 Command2 - Todo : Example on network crashing...it is using other patterns like singleton and observer.
 9 Singleton - Threadsafe singleton needs double nullability check...."http://javarevisited.blogspot.in/2011/06/volatile-keyword-java-example-tutorial.html" explains the importance of volatile.
+10 Adapter pattern - It is similar to Decorator where we wrap an object but the difference is in the intent.In Adapter pattern the intent is to make a class adapted to particular requirement.(Example of cat adapting to Lion interface)
+
 
 
 

@@ -1,0 +1,21 @@
+Play movie : Matrix---
+Plug to power
+Switch on the UPS
+Switch on the CPU
+Switch on Monitor
+Choosing login :Guest
+Entering password
+open VLC player
+Adding movieMatrix
+Playing
+
+
+Program : Facade pattern---
+Plug to power
+Switch on the UPS
+Switch on the CPU
+Switch on Monitor
+Choosing login :Guest
+Entering password
+Chosen workspace :dubby
+Chosen project :facade

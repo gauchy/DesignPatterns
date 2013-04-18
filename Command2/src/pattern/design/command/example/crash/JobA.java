@@ -9,27 +9,35 @@ public class JobA extends  AbstractJob {
 	{
 		System.out.println("Executing jobA");
 		try {
-			Thread.sleep(1000); //sleep equivalent to job operation
+			Thread.sleep(3000); //sleep equivalent to job operation
 		} catch (InterruptedException e) 
 		{
 			
 		}
 		
 		invokeRandomCrash();
-		
+		System.out.println("Execution finished jobA");
 		setStatus(Status.Completed);
 		
 	}
 
 	private void invokeRandomCrash() 
 	{
-		int i = (int) (Math.random()*5);
-		if(i == 4)
+		int i = (int) (Math.random()*3);
+		if(i == 1)
 		{
+			Controller.executorCount--;
+			this.setStatus(Status.Crash);
 			System.out.println("crashing the thread without completing job");
 			throw new RuntimeException();
 		}
 			
+	}
+
+	@Override
+	public String getDescription() 
+	{
+		return "JobA";
 	}
 
 

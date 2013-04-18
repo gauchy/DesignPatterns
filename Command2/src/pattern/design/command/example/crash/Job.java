@@ -5,4 +5,5 @@ public interface Job
 	void execute();
 	Status status();
 	void setStatus(Status status);
+	String getDescription();
 }

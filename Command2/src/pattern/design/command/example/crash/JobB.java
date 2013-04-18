@@ -9,13 +9,19 @@ public class JobB extends  AbstractJob {
 		System.out.println("Executing JobB");
 		try 
 		{
-			Thread.sleep(500); //sleep equivalent to job operation
+			Thread.sleep(1500); //sleep equivalent to job operation
 		} catch (InterruptedException e) 
 		{
 			//e.printStackTrace();
 			
 		}
+		System.out.println("Execution finished jobB");
+		setStatus(Status.Completed);
 	}
-
+	@Override
+	public String getDescription() 
+	{
+		return "JobB";
+	}
 
 }

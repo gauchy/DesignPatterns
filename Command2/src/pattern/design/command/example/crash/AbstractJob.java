@@ -8,6 +8,10 @@ public abstract class AbstractJob implements Job {
 	private Status status = Status.Waiting;
 	private List<JobCompleteListener> listJobCompleteListeners = new ArrayList<JobCompleteListener> ();
 	
+	AbstractJob()
+	{
+		attachListener(new PostJobActor());
+	}
 	@Override
 	public final Status status()
 	{
@@ -18,7 +22,8 @@ public abstract class AbstractJob implements Job {
 	public final void setStatus(Status status) 
 	{
 		this.status = status;
-		notifyListeners(this);
+		if(status == Status.Completed)
+			notifyListeners(this);
 	}
 	
 	private void notifyListeners(Job job) 

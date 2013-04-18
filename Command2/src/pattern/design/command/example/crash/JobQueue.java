@@ -3,7 +3,7 @@ package pattern.design.command.example.crash;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JobQueue 
+public class JobQueue
 {
 	private static volatile JobQueue instance;
 	private List<Job> jobList = new ArrayList<Job>();
@@ -17,7 +17,7 @@ public class JobQueue
 	{
 		if(instance == null)
 		{
-			synchronized (instance)
+			synchronized (JobQueue.class)
 			{
 				if(instance == null)
 				{
@@ -48,12 +48,28 @@ public class JobQueue
 		{
 			if(!jobList.isEmpty())
 			{
-				return jobList.get(0);
+				for(Job j : jobList)
+				{
+					if(j.status() == Status.Crash)
+					{
+						System.out.println("Processing crashed job: " + j.getDescription());
+						j.setStatus(Status.Processing);
+						return j;
+					}
+					else if (j.status() ==Status.Waiting)
+					{
+						j.setStatus(Status.Processing);
+						return j;
+					}
+				}
+				return null;
 			}
 			else
 				return null;
 		}
 	}
+
+	
 	
 	
 	

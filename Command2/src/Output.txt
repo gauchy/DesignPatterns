@@ -1,0 +1,25 @@
+Executor: Waiting for job
+Controller: Creating Executor1
+JobCreator: creating JobA
+Controller: Creating Executor2
+Executing jobA
+JobCreator: creating JobA
+crashing the thread without completing job
+Exception in thread "Thread-2" java.lang.RuntimeException
+	at pattern.design.command.example.crash.JobA.invokeRandomCrash(JobA.java:32)
+	at pattern.design.command.example.crash.JobA.execute(JobA.java:18)
+	at pattern.design.command.example.crash.Executor.run(Executor.java:26)
+	at java.lang.Thread.run(Thread.java:662)
+Processing crashed job: JobA
+Executing jobA
+Controller: Creating Executor3
+Executing jobA
+JobCreator: creating JobA
+Execution finished jobA
+PostJobActor: removing from queueJobA
+Executing jobA
+Execution finished jobA
+PostJobActor: removing from queueJobA
+...
+...
+...

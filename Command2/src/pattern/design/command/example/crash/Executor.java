@@ -12,16 +12,18 @@ public class Executor implements Runnable
 			Job job = jobQueue.getJob();
 			if(job == null)
 			{
-				System.out.println("Waiting for job");
-				try {
-					Thread.sleep(1500);
-				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
+				System.out.println("Executor: Waiting for job");
+				try
+				{
+					Thread.sleep(4500);
+				} 
+				catch (InterruptedException e) 
+				{
 					e.printStackTrace();
 				}
 			}
-			
-			job.execute();
+			else
+				job.execute();
 			
 			
 		}

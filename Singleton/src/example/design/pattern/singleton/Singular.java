@@ -23,7 +23,7 @@ public class Singular
 		{
 			//if synchronized block is not kept then two threads can 
 			//at the same moment enter into outer if and create two different instance
-			synchronized (instance) 
+			synchronized (Singular.class) 
 			{
 				//Second null check is required because if two threads have entered
 				//outer if and one thread goes and aquires the lock and creates the object

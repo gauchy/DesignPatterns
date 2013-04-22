@@ -14,6 +14,7 @@ Design pattern examples
 11 Facade Pattern - It is similar to Adapter and Decorator but again the intent is different , Its job is to expose a simpler interface to the user hiding complex details...example is of starting a movie or programming over a computer.
 12 Template method- Its nothing but interaction between abstract and concrete...No example 
 13 Iterator -Main purpose of Iterator pattern is to iterate over collection without exposing its implementation.
+14 Composite - The composite pattern is any tree kind of structure where from child another tree can start...For eg : the DOM is also a composite object...therefore from the body to the innermost divs and components we can create a composite object...TODO DOM example time and will permitting.
 
 
 

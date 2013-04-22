@@ -12,6 +12,8 @@ Design pattern examples
 9 Singleton - Threadsafe singleton needs double nullability check...."http://javarevisited.blogspot.in/2011/06/volatile-keyword-java-example-tutorial.html" explains the importance of volatile.
 10 Adapter pattern - It is similar to Decorator where we wrap an object but the difference is in the intent.In Adapter pattern the intent is to make a class adapted to particular requirement.(Example of cat adapting to Lion interface)
 11 Facade Pattern - It is similar to Adapter and Decorator but again the intent is different , Its job is to expose a simpler interface to the user hiding complex details...example is of starting a movie or programming over a computer.
+12 Template method- Its nothing but interaction between abstract and concrete...No example 
+13 Iterator -Main purpose of Iterator pattern is to iterate over collection without exposing its implementation.
 
 
 

@@ -22,7 +22,7 @@ public class Client
 		while(menuIterator.hasNext())
 		{
 			MenuItem menuItem = menuIterator.next();
-			System.out.println(menuItem.getName());
+			System.out.println(menuItem.getName() );
 		}
 		
 	}

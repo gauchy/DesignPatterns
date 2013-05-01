@@ -15,6 +15,8 @@ Design pattern examples
 12 Template method- Its nothing but interaction between abstract and concrete...No example 
 13 Iterator -Main purpose of Iterator pattern is to iterate over collection without exposing its implementation.
 14 Composite - The composite pattern is any tree kind of structure where from child another tree can start...For eg : the DOM is also a composite object...therefore from the body to the innermost divs and components we can create a composite object...TODO DOM example time and will permitting.
+15 State pattern - Example of Delhi metro turnstile.
+
 
 
 
